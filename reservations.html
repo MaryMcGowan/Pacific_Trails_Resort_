@@ -36,7 +36,7 @@
         <h2>Reservations at Pacific Trails</h2>
         <h3>Contact Us Today!</h3>
         <p>Required fields are marked with an asterisk *</p>
-        <form name="Contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+        <form name="Contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
 
             <label for="myFName">* First Name:</label>
             <input id="myFName" name="myFName" type="text" required>
@@ -58,6 +58,8 @@
 
             <label for="myComments">* Comments:</label>
             <textarea id="myComments" name="myComments" rows="2" cols="30" required></textarea>
+
+            <div class="captcha" data-netlify-recaptcha="true"></div>
 
             <input type="submit" value="Submit">
 
